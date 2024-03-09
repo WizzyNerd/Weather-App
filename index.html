@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="/2330544_sakshamSharma.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <!-- /* ------------Navigation section---------- */ -->
+    <header>
+        <nav id="navbar">
+            <h1>WEATHER APP</h1>
+            <div class="searchbox">
+                <input id="search" type="text" placeholder="enter a city ">
+                <button id="search-btn" onclick="mainFunction()"><i class="material-icons">
+                        search
+                    </i></button>
+
+
+            </div>
+        </nav>
+    </header>
+    <!-- ------------Main section----------  -->
+    <div class="main">
+        <!-- -- ------------Sub1 section1----------  -->
+        <div class="main1">
+            <img class="condition" src="/img/weather.svg">
+            <p class="type" style="font-size: 20px;"></p>
+            <h2 class="temp"></h2>
+            <h2 class="city"></h2>
+            <p class="time" style="font-size: 20px;"></p>
+        </div>
+        <hr>
+        <!-- -- ------------Sub section2----------  -->
+        <div class="main2">
+            <div class="data">
+                <i class="material-icons">
+                    calendar_month
+                </i>
+                <p>Date:</p> <span id="date"></span>
+            </div>
+            <div class="data">
+                <i class="material-icons">
+                    compress
+                </i>
+                <p>Pressure:</p><span id="pressure"></span>
+            </div>
+        </div>
+        <!-- -- ------------Sub section3----------  -->
+        <div class="main3">
+            <div class="data">
+                <i class="material-icons">
+                    water_drop
+                </i>
+                <p>Humidity:</p><span id="humidity"></span>
+            </div>
+            <div class="data">
+                <i class="material-icons">
+                    air
+                </i>
+                <p>Wind Speed:</p><span id="wind"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="/2330544_sakshamSharma.js"></script>
+</body>
+
+</html>
